@@ -1,0 +1,74 @@
+<head>
+    <style>
+        body {
+            font-size: 14px;
+            font-family: monospace;
+            color: #fff;
+            text-align: center;
+        }
+        
+        button {
+            padding: 1em 2em;
+            background: #ffc527;
+            color: #666;
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .container {
+            width: 50vw;
+            height: 50vh;
+            background: #2783ba;
+            margin: 5em;
+            padding: 5em;
+        }
+        
+        .box {
+            margin: 2em;
+            text-align: center;
+        }
+        
+        input {
+            border: none;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<html>
+
+<body>
+    <div class="container">
+        <h1>Win Powerball Game</h1>
+        <div class="box">
+            <label>Name: </label>
+            <input type="text" id="addName" />
+        </div>
+        <div class="box">
+            <label>Score: </label>
+            <input type="number" id="addScore" />
+        </div>
+
+        <button class="box" onclick="updateResult()" class="addBtn">Add</button>
+    </div>
+</body>
+
+</html>
+
+<script>
+    // add items to list - https://codepen.io/franklynroth/pen/ZYeaBd
+    function updateResult() {
+        let name = document.getElementById('addName').value;
+        let score = document.getElementById('addScore').value;
+        let listItem = name + ' ' + score;
+
+        console.log(listItem);
+
+         function createNewTaskElement() {
+            console.log('create new list');
+            let listItem = document.createElement("li");
+        }
+        createNewTaskElement();
+    }
+
+</script>
